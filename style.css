@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'lato',sans-serif;
+  font-family: 'Poppins',sans-serif;
 }
 ::selection{
   color: #000000;
@@ -74,7 +74,7 @@ nav .menu{
 .center{
   position: absolute;
   display: flex;
-  top: 52%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -82,14 +82,13 @@ nav .menu{
 }
 .center .title{
   color: #000000;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
 }
 .center .sub_title{
   color: #000000;
   font-size: 52px;
   font-weight: 600;
-  font-family: 'roboto',sans-serif
 }
 .center .btns{
   margin-top: 20px;
@@ -113,10 +112,10 @@ nav .menu{
   background: none;
 }
 .btns button:first-child:hover{
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+    background: #083E54;
+    color: rgb(255, 255, 255);
 }
 .center .btns button:last-child{
-  background: white;
-  color: black;
+  background: #083E54;
+  color: rgb(255, 255, 255);
 }
