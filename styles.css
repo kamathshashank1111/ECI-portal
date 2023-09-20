@@ -78,7 +78,7 @@ nav .menu{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .center .title{
   color: #000000;
@@ -89,6 +89,10 @@ nav .menu{
   color: #000000;
   font-size: 52px;
   font-weight: 600;
+}
+.sub_title{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .center .btns{
   margin-top: 20px;
