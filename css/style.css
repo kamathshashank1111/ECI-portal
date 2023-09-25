@@ -1195,7 +1195,8 @@ section{
    resize: none;
 }
 .form-container{
-   margin: 25rem
+   margin: 25rem;
+   overflow: hidden;
 }
 
 .form-container form{

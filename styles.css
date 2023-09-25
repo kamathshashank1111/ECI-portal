@@ -79,6 +79,7 @@ nav .menu{
   transform: translate(-50%, -50%);
   width: 100%;
   padding: 0 40px;
+  margin-top: auto;
 }
 .center .title{
   color: #000000;
@@ -95,14 +96,14 @@ nav .menu{
   padding-bottom: 10px;
 }
 .center .btns{
-  margin-top: 20px;
+  margin-top: 70px;
 }
 .center .btns button{
   height: 55px;
   width: 170px;
   border-radius: 5px;
   border: none;
-  margin: 0 10px;
+  /* margin-left: 30px; */
   border: 2px solid rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 500;
@@ -122,4 +123,7 @@ nav .menu{
 .center .btns button:last-child{
   background: #083E54;
   color: rgb(255, 255, 255);
+}
+.log{
+  margin-left: 20px;
 }

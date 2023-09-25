@@ -9,6 +9,9 @@
 body {
   background: #E3F2FD;
 }
+.chatbot{
+  overflow: hidden;
+}
 /* .chatbot-toggler {
   position: fixed;
   bottom: 30px;
@@ -191,4 +194,9 @@ header h2 {
   .chatbot header span {
     display: block;
   }
+}
+textarea{
+  position: absolute;
+  bottom: 0;
+
 }

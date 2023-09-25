@@ -124,3 +124,5 @@ closeBtn.addEventListener("click", () => document.body.classList.remove("show-ch
 //         messageElement.classList.add("error");
 //         messageElement.textContent = "Oops! Something went wrong. Please try again.";
 //     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+
+
