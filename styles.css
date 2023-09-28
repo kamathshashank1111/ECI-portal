@@ -101,7 +101,7 @@ nav .menu{
 .center .btns button{
   height: 55px;
   width: 170px;
-  border-radius: 5px;
+  border-radius: 25px;
   border: none;
   /* margin-left: 30px; */
   border: 2px solid rgb(0, 0, 0);

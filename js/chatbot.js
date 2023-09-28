@@ -69,6 +69,7 @@ const handleChat = () => {
         const incomingChatLi = createChatLi("Thinking...", "incoming");
         chatbox.appendChild(incomingChatLi);
         chatbox.scrollTo(0, chatbox.scrollHeight);
+        chatbox.removeChild(incomingChatLi);
         generateResponse(incomingChatLi);
     }, 600);
 }
