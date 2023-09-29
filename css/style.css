@@ -41,7 +41,6 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
    background-color: var(--main-color);
 }
-
 body{
    background-color: var(--light-bg);
    padding-left: 30rem;

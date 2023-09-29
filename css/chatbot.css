@@ -8,6 +8,7 @@
 }
 body {
   background: #E3F2FD;
+  overflow: hidden;
 }
 .chatbot{
   overflow: hidden;
@@ -64,6 +65,7 @@ body.show-chatbot .chatbot {
   transform: scale(1);
 }
 .chatbot header {
+  margin: 0px;
   padding: 16px 0;
   position: relative;
   text-align: center;
