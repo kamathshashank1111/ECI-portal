@@ -99,7 +99,7 @@ section{
     margin: 1rem 0;
  }
  .btn{
-    border-radius: .5rem;
+   border-radius: .5rem;
    color:#fff;
    font-size: 1.8rem;
    cursor: pointer;
@@ -113,7 +113,7 @@ section{
 
  }
  .btn:hover{
-    background-color: var(--black);
+   background-color: var(--black);
    color: var(--white);
  }
  form{

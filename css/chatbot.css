@@ -1,4 +1,4 @@
-/* Import Google font - Poppins */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
   margin: 0;
@@ -6,13 +6,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html{
+  overflow-y: hidden;
+}
 body {
   background: #E3F2FD;
-  overflow: hidden;
+  
 }
-.chatbot{
-  overflow: hidden;
-}
+
 /* .chatbot-toggler {
   position: fixed;
   bottom: 30px;
@@ -88,6 +89,7 @@ header h2 {
   overflow-y: auto;
   height: 510px;
   padding: 30px 20px 100px;
+  margin-bottom: 100px;
 }
 .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
   width: 6px;
@@ -108,7 +110,7 @@ header h2 {
   margin: 20px 0;
   justify-content: flex-end;
 }
-.chatbox .incoming span {
+.chatbox .incoming span img{
   width: 32px;
   height: 32px;
   color: #fff;
@@ -116,18 +118,24 @@ header h2 {
   text-align: center;
   line-height: 32px;
   align-self: flex-end;
-  background: #724ae8;
+  background: #E3F2FD;
   border-radius: 4px;
   margin: 0 10px 7px 0;
+
+  
 }
+
 .chatbox .chat p {
   white-space: pre-wrap;
+  margin-bottom: 15px;
   padding: 12px 16px;
   border-radius: 10px 10px 0 10px;
   max-width: 75%;
-  color: #fff;
-  font-size: 0.95rem;
-  background: #724ae8;
+  /* color: #fff; */
+  color: black;
+  font-size: 1.4rem;
+  /* background: #724ae8; */
+  background: #f7a823;
 }
 .chatbox .incoming p {
   border-radius: 10px 10px 10px 0;
@@ -137,8 +145,10 @@ header h2 {
   background: #f8d7da;
 }
 .chatbox .incoming p {
-  color: #000;
-  background: #f2f2f2;
+  /* color: #000; */
+  color: white;
+  /* background: #f2f2f2; */
+  background: #0f305b;
 }
 .chatbot .chat-input {
   display: flex;
@@ -189,6 +199,7 @@ header h2 {
   .chatbot .chatbox {
     height: 90%;
     padding: 25px 15px 100px;
+    margin-bottom: 100px;
   }
   .chatbot .chat-input {
     padding: 5px 15px;
@@ -197,8 +208,9 @@ header h2 {
     display: block;
   }
 }
-textarea{
+/* textarea{
   position: absolute;
   bottom: 0;
 
-}
+} */
+

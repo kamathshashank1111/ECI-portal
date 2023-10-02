@@ -10,20 +10,19 @@ const createChatLi = (message, className) => {
     
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", `${className}`);
-    let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+    let chatContent = className === "outgoing" ? `<p></p>` : `<span class=""><img src="images/Wordwave Logo Icon Final.png" alt="" width="50px"></span><p></p>`;
     chatLi.innerHTML = chatContent;
     chatLi.querySelector("p").textContent = message;
     return chatLi; 
 }
 
 const generateResponse = (chatElement) => {
-    // Get the user message from the chatElement
+  
     const Message = chatElement.querySelector("p").textContent;
 
-    // Construct the URL with the user's message
     const apiUrl ="https://chat.wordwave.in/Chat/?query=" + userMessage;
 
-    // Fetch data from the API
+    
     fetch(apiUrl)
         .then((response) => {
             if (!response.ok) {
@@ -32,19 +31,19 @@ const generateResponse = (chatElement) => {
             return response.json();
         })
         .then((data) => {
-            // Check if the JSON response contains an "answer" attribute
+        
             if (data && data.answer) {
-                // Create an incoming chat element with the answer
+            
                 const incomingChatLi = createChatLi(data.answer, "incoming");
                 chatbox.appendChild(incomingChatLi);
                 chatbox.scrollTo(0, chatbox.scrollHeight);
             } else {
-                // Handle the case where there is no answer in the response
+            
                 console.error("No answer found in the JSON response.");
             }
         })
         .catch((error) => {
-            // Handle errors from the fetch or JSON parsing
+            
             console.error("Error fetching or parsing data:", error);
             const errorChatLi = createChatLi("An error occurred while fetching data.", "incoming");
     chatbox.appendChild(errorChatLi);

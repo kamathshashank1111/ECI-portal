@@ -104,26 +104,31 @@ nav .menu{
   border-radius: 25px;
   border: none;
   /* margin-left: 30px; */
-  border: 2px solid rgb(0, 0, 0);
+  /* border: 2px solid rgb(0, 0, 0); */
   font-size: 20px;
   font-weight: 500;
   padding: 0 10px;
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease;
+  color: white;
+  background-color: #083E54;
 }
-.center .btns button:first-child{
+/* .center .btns button:first-child{
   color: #000000;
   background: none;
 }
 .btns button:first-child:hover{
-    background: #083E54;
+    background: #053142;
     color: rgb(255, 255, 255);
 }
 .center .btns button:last-child{
   background: #083E54;
   color: rgb(255, 255, 255);
-}
+} */
 .log{
   margin-left: 20px;
+}
+.center .btns button:hover{
+  background-color: #03222e;
 }
